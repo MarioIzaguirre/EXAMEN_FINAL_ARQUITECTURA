@@ -25,4 +25,4 @@ jobs:
           args: >
             -Dsonar.projectKey=MarioIzaguirre_EXAMEN_FINAL_ARQUITECTURA
             -Dsonar.organization=marioizaguirre
-            -Dsonar.sources=.
+            -Dsonar.sources=. 
