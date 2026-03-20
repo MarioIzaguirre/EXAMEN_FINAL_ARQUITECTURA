@@ -9,6 +9,7 @@ on:
 
 jobs:
   sonarqube:
+    name: SonarQube Scan
     runs-on: ubuntu-latest
 
     steps:
@@ -20,3 +21,8 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.projectKey=MarioIzaguirre_EXAMEN_FINAL_ARQUITECTURA
+            -Dsonar.organization=marioizaguirre
+            -Dsonar.sources=.
